@@ -1,6 +1,6 @@
 import Layout from "./Layout";
 import { Link } from 'react-router-dom';
-import { Calculator, User, Timer, Code } from 'lucide-react';
+import { Calculator, User, Timer, DollarSign, Code } from 'lucide-react';
 
 function Home() {
   return (
@@ -40,6 +40,15 @@ function Home() {
         >
           <Timer size={40} className="text-orange-600 mb-4" />
           <h2 className="text-lg font-semibold">Age Calculator</h2>
+        </Link>
+
+        {/* Profit Margin Calculator */}
+        <Link
+          to="/profitMargin-calculator"
+          className="bg-white hover:bg-gray-50 shadow-md rounded-2xl p-6 flex flex-col items-center transition"
+        >
+          <DollarSign size={40} className="text-yellow-600 mb-4" />
+          <h2 className="text-lg font-semibold">Profit Margin Calculator</h2>
         </Link>
 
         {/* Base64 Encoder */}
