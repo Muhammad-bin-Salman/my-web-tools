@@ -12,6 +12,7 @@ function Header() {
           <Link to="/emi-calculator" className="hover:underline">EMI</Link>
           <Link to="/bmi-calculator" className="hover:underline">BMI</Link>
           <Link to="/age-calculator" className="hover:underline">Age</Link>
+          <Link to="/profitMargin-calculator" className="hover:underline">Profit Margin</Link>
           <Link to="/base64-encoder" className="hover:underline">Base64</Link>
         </nav>
 

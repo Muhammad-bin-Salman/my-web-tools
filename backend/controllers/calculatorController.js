@@ -17,3 +17,10 @@ const { birthYear } = req.body;
 const age = new Date().getFullYear() - birthYear;
 res.json({ age: age });
 };
+
+export const calculateProfitMargin = (req, res) => {
+const { cost, revenue } = req.body;
+const profit = revenue - cost;
+const profitMargin = Number(((profit / revenue) * 100).toFixed(2));
+res.json({ profitMargin: profitMargin });
+};
