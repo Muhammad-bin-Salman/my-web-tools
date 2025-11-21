@@ -3,7 +3,7 @@ import { Home, Calculator, User, Timer, DollarSign, Code } from 'lucide-react';
 
 function Sidebar() {
   return (
-    <aside className="p-6">
+    <aside className="p-6 w-full md:w-auto">
       <h2 className="font-bold text-lg mb-4">Tools</h2>
       <ul className="space-y-3">
         <li><Link to="/" className="flex items-center gap-2 text-blue-600 hover:underline"><Home size={20} className="text-blue-600" /> Home</Link></li>

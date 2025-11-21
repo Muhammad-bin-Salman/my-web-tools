@@ -59,6 +59,15 @@ function Home() {
           <Code size={40} className="text-purple-600 mb-4" />
           <h2 className="text-lg font-semibold">Base64 Encoder</h2>
         </Link>
+        
+        {/* URL Encoder Decoder */}
+        <Link
+          to="/url-encoder-decoder"
+          className="bg-white hover:bg-gray-50 shadow-md rounded-2xl p-6 flex flex-col items-center transition"
+        >
+          <Code size={40} className="text-purple-600 mb-4" />
+          <h2 className="text-lg font-semibold">URL Encoder Decoder</h2>
+        </Link>
 
       </div>
 
