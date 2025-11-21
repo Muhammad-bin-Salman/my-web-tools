@@ -4,6 +4,7 @@ import BMICalculator from './components/BMICalculator';
 import AgeCalculator from './components/AgeCalculator';
 import ProfitMarginCalculator from './components/ProfitMarginCalculator';
 import Base64Encoder from './components/Base64Encoder';
+import URLEncoderDecoder from './components/URLEncoderDecoder';
 import Home from './components/Home';
 
 
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/age-calculator" element={<AgeCalculator />} />
                 <Route path="/profitMargin-calculator" element={<ProfitMarginCalculator />} />
                 <Route path="/base64-encoder" element={<Base64Encoder />} />
+                <Route path="/url-encoder-decoder" element={<URLEncoderDecoder />} />
             </Routes>
         </Router>
     );
