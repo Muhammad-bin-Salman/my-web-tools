@@ -14,8 +14,8 @@ function BMICalculator(){
 
     return(
         <Layout>
-            <div className="min-h-[80vh] flex items-center justify-center bg-gray-100">
-                <div className="bg-white shadow-md p-6 rounded-2xl w-80">
+            <div className="flex items-center justify-center min-h-full bg-gray-100 py-10">
+                <div className="bg-white shadow-md p-6 rounded-2xl max-w-sm">
                     <h2 className="text-xl font-bold mb-4 text-center">BMI Calculator</h2>
                     <form onSubmit={handleBMI} className="space-y-3">
                         <input type="number" placeholder="Weight in kg" onChange={e => setBmiData({...bmiData, weight: e.target.value})} className="border p-2 w-full" />

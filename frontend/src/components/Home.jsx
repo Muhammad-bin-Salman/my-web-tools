@@ -5,7 +5,7 @@ import { Calculator, User, Timer, DollarSign, Code } from 'lucide-react';
 function Home() {
   return (
     <Layout>
-    <div className="min-h-[80vh] bg-gray-100 p-8">
+    <div className="min-h-full bg-gray-100 p-8">
       
       {/* Dashboard Title */}
       <h1 className="text-3xl font-bold mb-8 text-gray-800">
