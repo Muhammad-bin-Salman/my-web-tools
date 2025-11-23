@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, Calculator, User, Timer, DollarSign, Code } from 'lucide-react';
+import { Home, Calculator, Activity, Timer, DollarSign, Code, Link2 } from 'lucide-react';
 
 function Sidebar() {
   return (
@@ -8,10 +8,11 @@ function Sidebar() {
       <ul className="space-y-3">
         <li><Link to="/" className="flex items-center gap-2 text-blue-600 hover:underline"><Home size={20} className="text-blue-600" /> Home</Link></li>
         <li><Link to="/emi-calculator" className="flex items-center gap-2 text-blue-600 hover:underline"><Calculator size={20} className="text-blue-600" /> Loan EMI Calculator</Link></li>
-        <li><Link to="/bmi-calculator" className="flex items-center gap-2 text-blue-600 hover:underline"><User size={20} className="text-green-600" /> BMI Calculator</Link></li>
+        <li><Link to="/bmi-calculator" className="flex items-center gap-2 text-blue-600 hover:underline"><Activity size={20} className="text-red-600" /> BMI Calculator</Link></li>
         <li><Link to="/age-calculator" className="flex items-center gap-2 text-blue-600 hover:underline"><Timer size={20} className="text-orange-600" /> Age Calculator</Link></li>
-        <li><Link to="/profitMargin-calculator" className="flex items-center gap-2 text-blue-600 hover:underline"><DollarSign size={20} className="text-yellow-600" /> Profit Margin Calculator</Link></li>
+        <li><Link to="/profitMargin-calculator" className="flex items-center gap-2 text-blue-600 hover:underline"><DollarSign size={20} className="text-emerald-600" /> Profit Margin Calculator</Link></li>
         <li><Link to="/base64-encoder" className="flex items-center gap-2 text-blue-600 hover:underline"><Code size={20} className="text-purple-600" /> Base64 Encoder</Link></li>
+        <li><Link to="/url-encoder-decoder" className="flex items-center gap-2 text-blue-600 hover:underline"><Link2 size={20} className="text-indigo-600" /> URL Encoder</Link></li>
       </ul>
     </aside>
   );

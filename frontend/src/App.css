@@ -1,10 +1,13 @@
+/* App.css - Dashboard-Ready Version */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* Remove max-width, margin, padding, text-align */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Keep only what you actually use (optional) */
 .logo {
   height: 6em;
   padding: 1.5em;

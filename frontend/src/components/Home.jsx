@@ -1,6 +1,6 @@
 import Layout from "./Layout";
 import { Link } from 'react-router-dom';
-import { Calculator, User, Timer, DollarSign, Code } from 'lucide-react';
+import { Calculator, Activity, Timer, DollarSign, Code, Link2 } from 'lucide-react';
 
 function Home() {
   return (
@@ -29,7 +29,7 @@ function Home() {
           to="/bmi-calculator"
           className="bg-white hover:bg-gray-50 shadow-md rounded-2xl p-6 flex flex-col items-center transition"
         >
-          <User size={40} className="text-green-600 mb-4" />
+          <Activity size={40} className="text-red-600 mb-4" />
           <h2 className="text-lg font-semibold">BMI Calculator</h2>
         </Link>
 
@@ -47,7 +47,7 @@ function Home() {
           to="/profitMargin-calculator"
           className="bg-white hover:bg-gray-50 shadow-md rounded-2xl p-6 flex flex-col items-center transition"
         >
-          <DollarSign size={40} className="text-yellow-600 mb-4" />
+          <DollarSign size={40} className="text-emerald-600 mb-4" />
           <h2 className="text-lg font-semibold">Profit Margin Calculator</h2>
         </Link>
 
@@ -65,7 +65,7 @@ function Home() {
           to="/url-encoder-decoder"
           className="bg-white hover:bg-gray-50 shadow-md rounded-2xl p-6 flex flex-col items-center transition"
         >
-          <Code size={40} className="text-purple-600 mb-4" />
+          <Link2 size={40} className="text-indigo-600 mb-4" />
           <h2 className="text-lg font-semibold">URL Encoder Decoder</h2>
         </Link>
 
