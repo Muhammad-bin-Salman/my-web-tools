@@ -4,29 +4,28 @@ import Sidebar from "./Sidebar";
 
 function Layout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col w-screen">
-
+    <div className="fixed inset-0 flex flex-col">
+      {/* Fixed Header */}
       <Header />
 
-      <div className="flex flex-1 w-full">
-
-        {/* Sidebar */}
-        <div className="hidden md:block w-64 bg-white shadow-lg">
+      <div className="flex flex-1 overflow-hidden">
+        {/* Fixed Sidebar – desktop only */}
+        <aside className="hidden md:block w-64 bg-white shadow-lg overflow-y-auto">
           <Sidebar />
-        </div>
+        </aside>
 
-        {/* Main Content */}
-        <main className="flex-1 w-full p-6">
-          {children}
+        {/* Scrollable Main Content ONLY */}
+        <main className="flex-1 overflow-y-auto bg-gray-50">
+          <div className="p-6 pt-8 max-w-7xl mx-auto w-full">
+            {children}
+          </div>
         </main>
-
       </div>
 
+      {/* Fixed Footer */}
       <Footer />
-
     </div>
   );
 }
-
 
 export default Layout;
