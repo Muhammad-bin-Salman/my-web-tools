@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import { useState } from 'react';
 import axios from 'axios';
+import Seo from './Seo';
 
 function EMICalculator() {
   const [amount, setAmount] = useState("");
@@ -68,6 +69,11 @@ function EMICalculator() {
 
   return (
     <Layout>
+      <Seo 
+        title="Free EMI Calculator - Calculate the monthly EMI for your loan easily."
+        description="Wish to calculate the monthly EMI of your loan? Calculate the EMI that you would pay every month to repay your loan using our EMI Calculator."
+        path="/emi-calculator"
+      />
       <div className="flex items-center justify-center min-h-full bg-gray-100 py-10">
         <div className="bg-white shadow-md p-6 rounded-2xl w-full max-w-lg">
           <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">

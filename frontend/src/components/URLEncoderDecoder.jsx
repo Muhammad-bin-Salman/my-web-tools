@@ -1,5 +1,6 @@
 import Layout from './Layout';
 import { useState } from 'react';
+import Seo from './Seo';
 
 function URLEncoderDecoder() {
   const [input, setInput] = useState("");
@@ -58,6 +59,11 @@ function URLEncoderDecoder() {
 
   return (
     <Layout>
+      <Seo 
+        title="Free URL Encoder/Decoder - Encode and Decode URLs Easily"
+        description="Encode and decode URLs using our free online URL Encoder/Decoder tool. Perfect for web developers and anyone needing quick URL conversions."
+        path="/url-encoder-decoder"
+      />
       <div className="flex items-center justify-center min-h-full bg-gray-100 py-10">
         <div className="bg-white shadow-md p-6 rounded-2xl w-full max-w-3xl">
           <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">

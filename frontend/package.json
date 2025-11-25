@@ -12,6 +12,7 @@
     "server": "node ../backend/server.js"
   },
   "dependencies": {
+    "@dr.pogodin/react-helmet": "^3.0.4",
     "axios": "^1.13.2",
     "lucide-react": "^0.554.0",
     "react": "^19.2.0",

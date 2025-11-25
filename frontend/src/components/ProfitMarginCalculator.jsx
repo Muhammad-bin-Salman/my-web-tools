@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import { useState } from 'react';
 import axios from 'axios';
+import Seo from './Seo';
 
 function ProfitMarginCalculator() {
   const [cost, setCost] = useState("");
@@ -75,6 +76,11 @@ function ProfitMarginCalculator() {
 
   return (
     <Layout>
+      <Seo 
+        title="Free Profit Margin Calculator - Calculate the net profit margin, net profit and profit percentage of sales from the cost and revenue."
+        description="This margin calculator will be your best friend if you want to find out an item's revenue, assuming you know its cost and your desired profit margin percentage."
+        path="/bmi-calculator"
+      />
       <div className="flex items-center justify-center min-h-full bg-gray-100 py-10">
         <div className="bg-white shadow-md p-6 rounded-2xl w-full max-w-lg">
           <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">

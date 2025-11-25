@@ -1,6 +1,7 @@
 import Layout from './Layout';
 import { useState } from 'react';
 import axios from 'axios';
+import Seo from './Seo';
 
 function Base64EncoderDecoder() {
     const [input, setInput] = useState("");
@@ -62,6 +63,11 @@ function Base64EncoderDecoder() {
 
     return (
         <Layout>
+            <Seo 
+            title="Free Base64 Encoder/Decoder - Encode and Decode Text Easily"
+            description="Encode and decode text using Base64 encoding with our free online tool. Perfect for developers and anyone needing quick Base64 conversions."
+            path="/base64-encoder-decoder"
+            />
         <div className="flex items-center justify-center min-h-full bg-gray-100 py-10">
             <div className="bg-white shadow-md p-6 rounded-2xl w-full max-w-2xl">
             <h1 className="text-2xl font-bold mb-4 text-center">

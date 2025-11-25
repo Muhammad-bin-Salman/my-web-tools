@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import { useState } from 'react';
 import axios from 'axios';
+import Seo from './Seo';
 
 function BMICalculator() {
   const [weight, setWeight] = useState("");
@@ -69,6 +70,11 @@ function BMICalculator() {
 
   return (
     <Layout>
+      <Seo 
+        title="Free BMI Calculator - Calculate Body Mass Index Instantly"
+        description="Calculate your BMI (Body Mass Index) with weight and height. Get instant results with category (underweight, normal, obese). 100% free, no sign-up."
+        path="/bmi-calculator"
+      />
       <div className="flex items-center justify-center min-h-full bg-gray-100 py-10">
         <div className="bg-white shadow-md p-6 rounded-2xl w-full max-w-md">
           <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">

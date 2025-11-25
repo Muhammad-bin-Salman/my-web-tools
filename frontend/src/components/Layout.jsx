@@ -1,10 +1,12 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
+import StructuredData from './StructuredData';
 
 function Layout({ children }) {
   return (
     <div className="fixed inset-0 flex flex-col">
+      <StructuredData />
       {/* Fixed Header */}
       <Header />
 
